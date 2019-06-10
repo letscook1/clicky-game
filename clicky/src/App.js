@@ -22,7 +22,7 @@ class App extends Component {
   selectImage = id => {
     // If image has already been selected (i.e. included in the selectedImages array), then Game Over!
     if (this.state.selectedImages.includes(id)) {
-      this.setState({ gameMsg: 'Your travels have ended...' });
+      this.setState({ gameMsg: 'You just cant match it' });
       this.resetGame();
     }
     // Else, increment the score
@@ -36,12 +36,12 @@ class App extends Component {
 
       // If selected all images without repeating, then you win!
       if (score === maxScore) {
-        this.setState({ gameMsg: 'Congratulations, your passport is full!' });
+        this.setState({ gameMsg: 'Congratulations, you are a botanist!' });
         this.resetGame();
       }
       // Add current image id to selectedImages array, update score, shuffle images and continue playing
       else {
-        this.setState({ gameMsg: 'You visited a new flower!' });
+        this.setState({ gameMsg: 'You picked a new flower!' });
         this.setState({ selected: this.state.selectedImages.push(id) });
         this.setState({ currentScore: score });
         this.shuffleImages();
