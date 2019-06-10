@@ -16,7 +16,7 @@ class App extends Component {
     currentScore: 0,
     topScore: 0,
     selectedImages: [],
-    gameMsg: 'Click a city to begin!'
+    gameMsg: 'Click a flower to begin!'
   };
 
   selectImage = id => {
@@ -41,7 +41,7 @@ class App extends Component {
       }
       // Add current image id to selectedImages array, update score, shuffle images and continue playing
       else {
-        this.setState({ gameMsg: 'You visited a new city!' });
+        this.setState({ gameMsg: 'You visited a new flower!' });
         this.setState({ selected: this.state.selectedImages.push(id) });
         this.setState({ currentScore: score });
         this.shuffleImages();
@@ -80,20 +80,15 @@ class App extends Component {
           score={this.state.currentScore}
           topScore={this.state.topScore}
         />
-        <Header
-          title={'World flowers'}
-          instructions={
-            'Travel to all the flowers, but you can only visit each city once!'
-          }
-        />
+        <Header title={'Flowers'} instructions={'Get your flower game on'} />
 
         <Wrapper>
-          {flowers.map(city => (
+          {flowers.map(flower => (
             <ImageCard
-              key={city.id}
-              id={city.id}
-              name={city.name}
-              image={city.image}
+              key={flower.id}
+              id={flower.id}
+              name={flower.name}
+              image={flower.image}
               selectImage={this.selectImage}
             />
           ))}
