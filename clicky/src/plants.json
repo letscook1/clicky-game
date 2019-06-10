@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Daffodil",
+    "image": "./assets/images/daffodil.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Violet",
+    "image": "./assets/images/violet.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tulip",
+    "image": "./assets/images/tulip.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sunflower",
+    "image": "./assets/images/sunflower.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Rose",
+    "image": "./assets/images/rose.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Lily",
+    "image": "./assets/images/lily.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Honeysuckle",
+    "image": "./assets/images/honeysuckle.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Orchid",
+    "image": "./assets/images/orchid.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Carnation",
+    "image": "./assets/images/carnation.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Iris",
+    "image": "./assets/images/iris.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Chrysanthemum",
+    "image": "./assets/images/chrysanthemum.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Peony",
+    "image": "./assets/images/peony.jpg"
+  }
+]
